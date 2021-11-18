@@ -1,0 +1,31 @@
+問１　ルートブリッジに該当するスイッチ
+A. Switch3
+
+問２　全てのポートの役割
+Switch１
+F0／1 DP
+RPの対向ポートのため
+F0／2　RP
+最小パスコストのため
+Switch２
+F0／1　RP
+最小パスコストのため
+F0／2　DP
+RPの対向ポートのため
+Switch3
+E0／1　DP
+ Switch３がルートブリッジのため
+E0／2　DP
+Switch３がルートブリッジのため
+Switch４
+E0／1　RP
+最小パスコストのため
+E0／2　BP
+RP、DPどちらにも選ばれなかったため
+
+Switch3からSwitch1のショートパスコストは100
+Switch1からSwitch2のショートパスコストは19
+Switch2からSwitch4のショートパスコストは100
+Switch4からSwitch1のショートパスコストは100
+
+よって最短ルートがSwitch3→Switch1→Switch2からSwitch4となる
