@@ -26,6 +26,7 @@ RP、DPどちらにも選ばれなかったため
 Switch3からSwitch1のショートパスコストは100
 Switch1からSwitch2のショートパスコストは19
 Switch2からSwitch4のショートパスコストは100
-Switch4からSwitch1のショートパスコストは100
+Switch4からSwitch3のショートパスコストは100
 
-よって最短ルートがSwitch3→Switch1→Switch2からSwitch4となる
+よってルートブリッジのSwitch3からの最短ルートが
+Switch3→Switch1→Switch2→Switch4→witch3となる
