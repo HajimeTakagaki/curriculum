@@ -3,15 +3,15 @@ A. Switch3
 
 問２　全てのポートの役割
 Switch１
-F0／1 BP
-RP、DPどちらにも選ばれなかったため
-F0／2　RP
-最小パスコストのため
-Switch２
-F0／1　DP
+F0／1 DP
 RPの対向ポートのため
 F0／2　RP
-最小パスコストのため
+Switch1に繋いだPCの最小パスコストのため
+Switch２
+F0／1　RP
+Switch2に繋いだPCの最小パスコストのため
+F0／2　
+DP,BP共に選ばれなかったため
 Switch3
 E0／1　DP
  Switch３がルートブリッジのため
@@ -19,16 +19,11 @@ E0／2　DP
 Switch３がルートブリッジのため
 Switch４
 E0／1　RP
-最小パスコストのため
-E0／2　DP
-RPの対向ポートのため
+ブリッジプライオリティがプライオリティがSwitch２より低いため
+E0／2　RP
+Switch4に繋いだPCの最小パスコストのため
 
 Switch3からSwitch1のショートパスコストは100
 Switch1からSwitch2のショートパスコストは19
 Switch2からSwitch4のショートパスコストは100
 Switch4からSwitch3のショートパスコストは100
-
-ブリッジプライオリティがSwitch3：4097のためルートブリッジ
-ブリッジプライオリティがSwitch4：8193のため
-ルートブリッジのSwitch3からの最短ルートが
-Switch3→Switch4→Switch2→Switch1→witch3となる
