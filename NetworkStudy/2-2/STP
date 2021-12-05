@@ -10,7 +10,7 @@ Switch1に繋いだPCの最小パスコストのため
 Switch２
 F0／1　RP
 Switch2に繋いだPCの最小パスコストのため
-F0／2　
+F0／2　BP
 DP,BP共に選ばれなかったため
 Switch3
 E0／1　DP
@@ -18,8 +18,9 @@ E0／1　DP
 E0／2　DP
 Switch３がルートブリッジのため
 Switch４
-E0／1　RP
-ブリッジプライオリティがプライオリティがSwitch２より低いため
+E0／1　DP
+ RPはすでにあり、BPかDPになる。
+ブリッジプライオリティがプライオリティがSwitch２F0／2より低いため
 E0／2　RP
 Switch4に繋いだPCの最小パスコストのため
 
